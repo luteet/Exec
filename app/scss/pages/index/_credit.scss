@@ -1,0 +1,273 @@
+.credit {
+	// .credit__container
+
+	&__container {
+	}
+
+	// .credit__header
+
+	&__header {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		
+		@media (min-width: 535px) {
+			padding-top: 2px;
+		}
+		@media (min-width: 685px) {
+			padding-top: 5px;
+		}
+		@media (min-width: 890px) {
+			padding-top: 0;
+		}
+		@media (min-width: 1165px) {
+			padding-top: 4px;
+		}
+	}
+
+	// .credit__name
+
+	&__name {
+	}
+
+	// .credit__title
+
+	&__title {
+	}
+
+	// .credit__text
+
+	&__text {
+		max-width: 400px;
+		@media (min-width: 1165px) {
+			max-width: 460px;
+		}
+	}
+
+	// .credit__list
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		margin: -5px;
+		padding-top: 53px;
+		@media (min-width: 535px) {
+			padding-top: 55px;
+		}
+		@media (min-width: 685px) {
+			padding-top: 71px;
+		}
+		@media (min-width: 960px) {
+			padding-top: 72px;
+		}
+	}
+
+	// .credit__card
+
+	&__card {
+		flex: 1 1 100%;
+		@media (min-width: 1015px) {
+			flex: 0 1 33.333%;
+		}
+		padding: 5px;
+
+		&._dark &--body {
+			padding: 31px 31px 33px 31px;
+			@media (min-width: 435px) {
+				padding: 32px 31px 36px 31px;
+			}
+			@media (min-width: 535px) {
+				padding: 33px 31px 35px 32px;
+			}
+			@media (min-width: 685px) {
+				padding: 33px 31px 36px 34px;
+			}
+			@media (min-width: 890px) {
+				padding: 35px 31px 31px 31px;
+			}
+			@media (min-width: 960px) {
+				padding: 35px 31px 31px 31px;
+			}
+			@media (min-width: 1015px) {
+				padding: 63px 25px 61px 26px;
+			}
+			@media (min-width: 1095px) {
+				padding: 63px 25px 63px 26px;
+			}
+			@media (min-width: 1165px) {
+				padding: 59px 25px 60px 26px;
+			}
+			@media (min-width: 1205px) {
+				padding: 61px 35px 63px 38px;
+			}
+			@media (min-width: 1285px) {
+				padding: 63px 41px;
+			}
+			background: var(--accent);
+			color: #FFF;
+		}
+
+		&._dark &--btn {
+			margin-top: -5px;
+			@media (min-width: 1165px) {
+				margin-top: 0;
+			}
+			background: #FFF;
+			color: var(--accent);
+			&:hover {
+				background: var(--light);
+			}
+			
+			&:active {
+				background: #bebebe;
+			}
+		}
+
+		&._dark &--block h5 {
+			color: rgba(255, 255, 255, 0.55);
+		}
+
+		&._dark &--block ul li {
+			color: #FFF;
+			&::before {
+				border-color: #FFF;
+			}
+		}
+
+		&._dark &--text {
+			padding-right: 15px;
+			@media (min-width: 1205px) {
+				padding-right: 0;
+			}
+		}
+
+		// .credit__card--body
+
+		&--body {
+			padding: 32px 31px 29px 31px;
+			@media (min-width: 435px) {
+				padding: 32px 31px 31px 31px;
+			}
+			@media (min-width: 685px) {
+				padding: 32px 31px 31px 33px;
+			}
+			@media (min-width: 890px) {
+				padding: 33px 31px 33px 30px;
+			}
+			@media (min-width: 960px) {
+				padding: 33px 31px 33px 30px;
+			}
+			@media (min-width: 1015px) {
+				padding: 40px 26px 40px 26px;
+			}
+			@media (min-width: 1095px) {
+				padding: 38px 26px 38px 26px;
+			}
+			@media (min-width: 1165px) {
+				padding: 43px 26px 40px 26px;
+			}
+			@media (min-width: 1205px) {
+				padding: 47px 35px 52px 36px;
+			}
+			@media (min-width: 1285px) {
+				padding: 52px 41px;
+			}
+			background: var(--light);
+			border-radius: 25px;
+			color: var(--accent);
+		}
+
+		// .credit__card--title
+
+		&--title {
+			font-weight: 500;
+			font-size: 1.5rem;
+			line-height: 124.5%;
+			
+		}
+
+		// .credit__card--text
+
+		&--text {
+			font-size: 0.875rem;
+			line-height: 125%;
+
+			padding-top: 11px;
+		}
+
+		// .credit__card--list
+
+		&--list {
+			padding-top: 12px;
+		}
+
+		// .credit__card--block
+
+		&--block {
+			padding: 12px 0;
+
+			& h5 {
+				text-transform: uppercase;
+				color: rgba(14, 11, 61, 0.55);
+				font-size: 0.75rem;
+				line-height: 125%;
+			}
+
+			& ul {
+				padding-top: 5.5px;
+
+				& li {
+					padding: 6.5px 0 6.5px 30px;
+					@media (min-width: 1205px) {
+						padding: 5.5px 0 5.5px 30px;
+					}
+
+					font-size: 14px;
+					line-height: 125%;
+					color: var(--accent);
+
+					position: relative;
+					&::before {
+						content: "";
+						position: absolute;
+						left: 2px; top: 9px;
+						width: 10px; height: 10px;
+						border-radius: 50%;
+						border: 1px solid #A663CC;
+					}
+				}
+			}
+		}
+
+		// .credit__card--footer
+
+		&--footer {
+			padding-top: 10px;
+			@media (min-width: 1015px) {
+				padding-top: 7px;
+			}
+			@media (min-width: 1205px) {
+				padding-top: 12px;
+			}
+
+			text-align: center;
+		}
+
+		// .credit__card--btn
+
+		&--btn {
+			width: 100%;
+			text-align: center;
+			justify-content: center;
+
+			font-size: 0.875rem;
+			padding: 16px 25px;
+			@media (min-width: 1205px) {
+				padding: 18px 25px;
+			}
+		}
+	}
+}

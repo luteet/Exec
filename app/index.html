@@ -1,0 +1,443 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<div class="show-wrapper" data-aos="fade-in" data-aos-duration="2000">
+			<div class="show" style="background-image: url(img/snow.png);"></div>
+			<div class="show2" style="background-image: url(img/snow.png);"></div>
+		</div>
+		<section class="intro">
+			<div class="intro__bg" data-aos="fade-in" data-aos-delay="200">
+				<div class="intro__bg--decor">
+					<picture>
+						<source srcset="img/index/intro/bg.webp" type="image/webp">
+						<img src="img/index/intro/bg.png" width="0" height="0" loading="lazy" alt="">
+					</picture>
+				</div>
+			</div>
+			<div class="intro__container container">
+				<div class="intro__block">
+					<div class="intro__info">
+						<h1 class="intro__main-title main-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="750">
+							Financial
+							healthcare for your workforce
+						</h1>
+						<div class="intro__text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="750">
+							Empower your employees to get a 360-degree view of their finances. Through real-time profiles, on-demand access to highly-skilled advisors and personalised learning to enhance financial literacy.
+						</div>
+						<div class="intro__footer" data-aos="fade-up" data-aos-delay="400" data-aos-duration="750">
+							<a href="#" class="intro__btn btn">
+								Get a demo
+								<svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.708374 1.67969L4.47139 5L0.708374 8.32031" stroke="white" stroke-width="1.0625" stroke-linecap="square"/>
+								</svg>
+							</a>
+							<div class="intro__rating">
+								<div class="intro__rating--header">
+									<div class="intro__rating--list">
+										<span>★</span>
+										<span>★</span>
+										<span>★</span>
+										<span>★</span>
+										<span>★</span>
+									</div>
+									<span class="intro__rating--value">
+										4.9
+									</span>
+								</div>
+								<span class="intro__rating--name">
+									Average Rating
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="intro__image" data-aos="fade-in" data-aos-delay="500" data-aos-duration="750">
+						<img src="img/index/intro/image.svg" loading="lazy" alt="" width="500" height="500" class="intro__image--img">
+					</div>
+				</div>
+				<div class="intro__trusted" data-aos="fade-up" data-aos-delay="600" data-aos-duration="750">
+					<h2 class="intro__trusted--title">
+						Trusted by talent from top companies
+					</h2>
+					<div class="intro__trusted--slider intro__slider swiper">
+						<div class="intro__slider--list swiper-wrapper">
+							@@loop("html/index/intro/_slide.html", [
+								{"logo": '1'},
+								{"logo": '2'},
+								{"logo": '3'},
+								{"logo": '4'},
+								{"logo": '5'},
+								{"logo": '6'},
+							])
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="access advantage section-padding">
+			<div class="advantage__container container">
+				<div class="advantage__block">
+					<div class="advantage__info access__info">
+						<h2 class="advantage__name section-name" data-aos="fade-up" data-aos-delay="400" data-aos-anchor=".access__info">
+							Access the best
+						</h2>
+						<h3 class="advantage__title section-title" data-aos="fade-up" data-aos-delay="500" data-aos-anchor=".access__info">
+							On-demand access to financial advisors
+						</h3>
+						<div class="advantage__text section-text" data-aos="fade-up" data-aos-delay="600" data-aos-anchor=".access__info">
+							Book 30 mins slots with relevant and regulated specialists (mortgage, savings, pension and more)
+						</div>
+					</div>
+					<div class="advantage__image access__image" data-aos="fade-in">
+						<div class="access__image--body">
+							<img src="img/index/access/bg.svg" width="500" height="400" loading="lazy" alt="" class="access__image--bg">
+							<div class="access__image--list">
+								<div class="access__image--element">
+									<img src="img/index/access/image-element-1.svg" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor=".advantage__image" width="154" height="154" loading="lazy" alt="">
+								</div>
+								<div class="access__image--element">
+									<img src="img/index/access/image-element-2.svg" data-aos="zoom-in" data-aos-delay="100" data-aos-anchor=".advantage__image" width="218" height="218" loading="lazy" alt="">
+								</div>
+								<div class="access__image--element">
+									<img src="img/index/access/image-element-3.svg" data-aos="zoom-in" data-aos-delay="300" data-aos-anchor=".advantage__image" width="154" height="154" loading="lazy" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="effective advantage section-padding">
+			<div class="advantage__container container">
+				<div class="advantage__block _reverse">
+					<div class="advantage__info effective__info">
+						<h2 class="advantage__name section-name" data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".effective__info">
+							Effective learning
+						</h2>
+						<h3 class="advantage__title section-title" data-aos="fade-up" data-aos-delay="400" data-aos-anchor=".effective__info">
+							AI driven financial literacy
+						</h3>
+						<div class="advantage__text section-text" data-aos="fade-up" data-aos-delay="500" data-aos-anchor=".effective__info">
+							Support your employees to develop confident understanding of financial concepts. AI-driven placement tests determine the starting point and make accurate predictions about your employees learning journey to ensure a personalized experience.
+						</div>
+					</div>
+					<div class="advantage__image effective__image" data-aos="fade-in">
+						<div class="effective__image--body">
+							<img src="img/index/effective/bg.svg" width="500" height="400" loading="lazy" alt="" class="effective__image--bg">
+							<div class="effective__image--list">
+								<div class="effective__image--element">
+									<img src="img/index/effective/image-element-1.svg" data-aos="fade-right" data-aos-delay="100" data-aos-anchor=".effective__image" width="486" height="113" loading="lazy" alt="">
+								</div>
+								<div class="effective__image--element">
+									<img src="img/index/effective/image-element-2.svg" data-aos="fade-right" data-aos-delay="200" data-aos-anchor=".effective__image" width="417" height="113" loading="lazy" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="easy-integrations advantage section-padding">
+			<div class="advantage__container container">
+				<div class="advantage__block">
+					<div class="advantage__info easy-integrations__info">
+						<h2 class="advantage__name section-name" data-aos="fade-up" data-aos-delay="400" data-aos-anchor=".easy-integrations__info">
+							Easy integrations
+						</h2>
+						<h3 class="advantage__title section-title _full" data-aos="fade-up" data-aos-delay="500" data-aos-anchor=".easy-integrations__info">
+							Works with the tools you already use
+						</h3>
+						<div class="advantage__text section-text" data-aos="fade-up" data-aos-delay="600" data-aos-anchor=".easy-integrations__info">
+							We connect directly to your HR and payroll software, saving your employees time and stress and reducing the workload on your Payroll and People teams.
+						</div>
+					</div>
+					<div class="advantage__image easy-integrations__image" data-aos="fade-in">
+						<div class="easy-integrations__image--body">
+							<img src="img/index/easy-integrations/bg.svg" width="500" height="400" loading="lazy" alt="" class="easy-integrations__image--bg">
+							<div class="easy-integrations__image--list">
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="100" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-1.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="125" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-2.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="150" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-3.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="175" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-4.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-5.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="225" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-6.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="250" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-7.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="275" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-8.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+								<div class="easy-integrations__image--element" data-aos="zoom-in" data-aos-delay="300" data-aos-anchor=".easy-integrations__image">
+									<img src="img/index/easy-integrations/logo-9.svg" width="150" height="150" loading="lazy" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="integrate section-padding">
+			<div class="integrate__body">
+				<div class="integrate__bg">
+					<div class="integrate__bg--element">
+						<picture>
+							<source srcset="img/index/integrate/decor-1.webp" type="image/webp">
+							<img src="img/index/integrate/decor-1.png" alt="" width="0" height="0" loading="lazy">
+						</picture>
+					</div>
+					<div class="integrate__bg--element">
+						<picture>
+							<source srcset="img/index/integrate/decor-2.webp" type="image/webp">
+							<img src="img/index/integrate/decor-2.png" alt="" width="0" height="0" loading="lazy">
+						</picture>
+					</div>
+				</div>
+				<div class="integrate__container container">
+					<h2 class="integrate__name section-name" data-aos="fade-up">
+						Easy integrations
+					</h2>
+					<h3 class="integrate__title section-title" data-aos="fade-up" data-aos-delay="100">
+						Integrate Exec with
+						your favourite tools
+					</h3>
+					<div class="integrate__text section-text" data-aos="fade-up" data-aos-delay="200">
+						We connect directly to your HR and payroll software, saving
+						your employees time and stress.
+					</div>
+					<ul class="integrate__list">
+						@@loop("html/index/integrate/_item.html", [
+							{
+								"icon": "1",
+								"title": "Application Review",
+								"text": "We screen applications and resumes to evaluate experience, skills, and professionalism.",
+								"delay": "300",
+								"anim-type": "zoom-in-right",
+							},
+							{
+								"icon": "2",
+								"title": "Credential Evaluation",
+								"text": "All coaches must have ICF certification (or a credential of similar caliber) and have logged significant coaching hours.",
+								"delay": "400",
+								"anim-type": "zoom-in-right",
+							},
+							{
+								"icon": "3",
+								"title": "In-depth Interview",
+								"text": "Each applicant meets for a 1:1 interview with our Head of Coaching, who has over 30 years of HR experience.",
+								"delay": "500",
+								"anim-type": "zoom-in-right",
+							},
+							{
+								"icon": "4",
+								"title": "On-going Monitoring",
+								"text": "We monitor client reviews and have regular check-ins to ensure all our coaches are exceeding expectations.",
+								"delay": "800",
+								"anim-type": "zoom-in-left",
+							},
+							{
+								"icon": "5",
+								"title": "Background Check",
+								"text": "Before inviting a coach onto our platform, we perform an extensive background check.",
+								"delay": "700",
+								"anim-type": "zoom-in-left",
+							},
+							{
+								"icon": "6",
+								"title": "Reference Gathering",
+								"text": "We ask each coach to provide at least three references from previous clients they’ve coached.",
+								"delay": "600",
+								"anim-type": "zoom-in-down",
+							},
+						])
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="protect section-padding">
+			<div class="protect__container container">
+				<h2 class="protect__name section-name" data-aos="fade-up">
+					PROTECT YOUR BUDGET
+				</h2>
+				<h3 class="protect__title section-title" data-aos="fade-up" data-aos-delay="100">
+					Stretch your talent
+					budget further
+				</h3>
+				<div class="protect__text section-text" data-aos="fade-up" data-aos-delay="200">
+					Our credit system ensures that your budget only gets spent on the
+					services that will make your programs successful.
+				</div>
+				<ul class="protect__list">
+					<li class="protect__item" data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".protect__list">
+						<div class="protect__item--body">
+							<div class="protect__item--header">
+								<img src="img/index/protect/icon-1.svg" width="64" height="64" loading="lazy" alt="" class="protect__item--icon">
+								<h4 class="protect__item--title">
+									Control budget allocation
+								</h4>
+							</div>
+							<div class="protect__item--text">
+								Credits only get spent when your people are utilizing talent development services.
+							</div>
+						</div>
+					</li>
+					<li class="protect__item" data-aos="fade-up" data-aos-delay="400" data-aos-anchor=".protect__list">
+						<div class="protect__item--body">
+							<div class="protect__item--header">
+								<img src="img/index/protect/icon-2.svg" width="64" height="64" loading="lazy" alt="" class="protect__item--icon">
+								<h4 class="protect__item--title">
+									Easily redistribute
+									app credits
+								</h4>
+							</div>
+							<div class="protect__item--text">
+								Credits have a two-year shelf life and can be easily redistributed to other employees if they aren’t used.
+							</div>
+						</div>
+					</li>
+					<li class="protect__item" data-aos="fade-up" data-aos-delay="500" data-aos-anchor=".protect__list">
+						<div class="protect__item--body">
+							<div class="protect__item--header">
+								<img src="img/index/protect/icon-3.svg" width="64" height="64" loading="lazy" alt="" class="protect__item--icon">
+								<h4 class="protect__item--title">
+									Services that fit
+									any budget
+								</h4>
+							</div>
+							<div class="protect__item--text">
+								We’ll help you curate a bench of coaching and training services that make the most out of your professional development budget.
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="catalyze-break section-padding">
+			<div class="catalyze-break__container container">
+				<div class="catalyze-break__block">
+					<div class="catalyze-break__block--body">
+						<div class="catalyze-break__block--bg">
+							<div class="catalyze-break__block--bg-wrapper" data-aos="fade-in" data-aos-delay="100">
+								<img src="img/index/catalyze-break/decor-1.svg" width="0" height="0" loading="lazy" alt="">
+								<img src="img/index/catalyze-break/decor-2.svg" width="0" height="0" loading="lazy" alt="">
+							</div>
+						</div>
+						<div class="catalyze-break__block--content">
+							<h2 class="catalyze-break__title section-title _light _alt" data-aos="fade-up" data-aos-delay="200" data-aos-anchor=".catalyze-break__block--content">
+								Catalyze Break -  throughs
+								with Powerful Assessments
+							</h2>
+							<div class="catalyze-break__text section-text" data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".catalyze-break__block--content">
+								We have coaches that specialize in delivering all the major assessments. Choose your favorite, or let us provide a recommendation.
+							</div>
+							<div class="catalyze-break__footer" data-aos="fade-up" data-aos-delay="400" data-aos-anchor=".catalyze-break__block--content">
+								<a href="#" class="catalyze-break__btn btn _gradient">
+									Contact sales
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="credit section-padding">
+			<div class="credit__container container">
+				<div class="credit__header">
+					<h2 class="credit__name section-name" data-aos="fade-up" data-aos-anchor=".credit__header">
+						CREDIT SYSTEM
+					</h2>
+					<h3 class="credit__title section-title _alt" data-aos="fade-up" data-aos-delay="100" data-aos-anchor=".credit__header">
+						Example packages
+					</h3>
+					<div class="credit__text section-text" data-aos="fade-up" data-aos-delay="200" data-aos-anchor=".credit__header">
+						You decide how credits get allocated and what
+						services they can be used to procure.
+					</div>
+				</div>
+				<ul class="credit__list">
+					@@loop("html/index/credit/_card.html", [
+						{
+							"class": "",
+							"delay": "300",
+							"anim-type": "zoom-out-right",
+							"title": "Leadership Coaching",
+							"text": "Give new managers flexible support during the first 3 months in their new role",
+							"paragraph": {
+								"n1": "4-Week Management Skills Training (Aligned with each promotion cycle)",
+								"n2": "DISC assessment for each new manager",
+								"n3": "3 sessions with a leadership coach",
+								"n4": "16 credits per new manager",
+								"n5": "Credits can be reallocated if not used",
+							},
+						},
+						{
+							"class": " _dark",
+							"delay": "500",
+							"anim-type": "zoom-out",
+							"title": "Onboarding Package",
+							"text": "Create a talent attraction benefit that helps new employees ramp up faster",
+							"paragraph": {
+								"n1": "30/60/90 day plan review for each new manager",
+								"n2": "3 sessions with a leadership or performance coach",
+								"n3": "1 session with a communication coach",
+								"n4": "14 credits per new employee",
+								"n5": "Credits can be reallocated if not used",
+							}
+						},
+						{
+							"class": "",
+							"delay": "400",
+							"anim-type": "zoom-out-left",
+							"title": "Internal Mobility",
+							"text": "Spur internal mobility by giving interested employees the opportunity to connect with career and development coaches",
+							"paragraph": {
+								"n1": "Resume & Linkedin Reviews",
+								"n2": "2 sessions with a career coach",
+								"n3": "4 sessions with a leadership or performance coach",
+								"n4": "28 credits per accepted employee",
+								"n5": "Credits can be reallocated if not used",
+							}
+						},
+					])
+				</ul>
+			</div>
+		</section>
+		<section class="get-started section-padding">
+			<div class="get-started__container container">
+				<div class="get-started__block">
+					<h2 class="get-started__name section-name" data-aos="fade-up" data-aos-anchor=".get-started__block">
+						Get started
+					</h2>
+					<h3 class="get-started__title section-title _alt" data-aos="fade-up" data-aos-delay="100" data-aos-anchor=".get-started__block">
+						Let’s build your
+						dream program
+					</h3>
+					<div class="get-started__text section-text" data-aos="fade-up" data-aos-delay="200" data-aos-anchor=".get-started__block">
+						Book time with one of Exec’s program development specialists
+						to connect with the exact services you need to build
+						the program you have in mind.
+					</div>
+					<div class="get-started__footer" data-aos="fade-up" data-aos-delay="300" data-aos-anchor=".get-started__block">
+						<a href="#" class="get-started__btn btn">
+							Get a demo
+							<svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.708374 1.67969L4.47139 5L0.708374 8.32031" stroke="white" stroke-width="1.0625" stroke-linecap="square"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

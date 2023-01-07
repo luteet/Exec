@@ -1,0 +1,153 @@
+.protect {
+	// .protect__container
+
+	&__container {
+		text-align: center;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	// .protect__name
+
+	&__name {
+		
+	}
+
+	// .protect__title
+
+	&__title {
+		display: inline-block;
+		max-width: 400px;
+		@media (min-width: 1015px) {
+			max-width: 500px;
+		}
+		@media (min-width: 1205px) {
+			line-height: 116.5%;
+		}
+		font-size: 2.25rem;
+	}
+
+	// .protect__text
+
+	&__text {
+		display: inline-block;
+		max-width: 550px;
+		@media (min-width: 1205px) {
+			max-width: 570px;
+		}
+	}
+
+	// .protect__list
+
+	&__list {
+		padding-top: 59px;
+		margin: -16px -18px;
+		@media (min-width: 685px) {
+			padding-top: 68px;
+		}
+		@media (min-width: 890px) {
+			margin: -20px -18px;
+			padding-top: 70px;
+		}
+		@media (min-width: 960px) {
+			padding-top: 69px;
+		}
+		@media (min-width: 1015px) {
+			padding-top: 93px;
+			margin: -30px -25px;
+		}
+		@media (min-width: 1095px) {
+			margin: -30px -44px;
+		}
+		@media (min-width: 1165px) {
+			padding-top: 90px;
+		}
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		text-align: left;
+		
+	}
+
+	// .protect__item
+
+	&__item {
+		padding: 16px 18px;
+		flex: 1 1 100%;
+		@media (min-width: 890px) {
+			flex: 0 1 33.333%;
+			padding: 20px 18px;
+		}
+		@media (min-width: 1015px) {
+			padding: 30px 25px;
+		}
+		@media (min-width: 1095px) {
+			padding: 30px 44px;
+		}
+		
+		
+		// .protect__item--body
+
+		&--body {
+		}
+
+		// .protect__item--header
+
+		&--header {
+			display: flex;
+			align-items: center;
+		}
+
+		// .protect__item--icon
+
+		&--icon {
+			width: 55px; height: 55px;
+			@media (min-width: 1015px) {
+				width: 64px; height: 64px;
+			}
+		}
+
+		// .protect__item--title
+
+		&--title {
+			font-weight: 500;
+			font-size: 1.25rem;
+			line-height: 121%;
+			color: var(--accent);
+
+			padding-left: 21px;
+			max-width: 270px;
+			@media (min-width: 890px) {
+				max-width: 173px;
+			}
+			@media (min-width: 960px) {
+				max-width: 220px;
+			}
+
+			@media (min-width: 1015px) {
+				font-size: 1.375rem;
+			}
+
+			
+		}
+
+		// .protect__item--text
+
+		&--text {
+			padding-top: 17px;
+			line-height: 150%;
+			color: var(--accent);
+			font-size: 0.875rem;
+			@media (min-width: 1015px) {
+				padding-top: 27px;
+			}
+			@media (min-width: 1095px) {
+				font-size: 1rem;
+			}
+		}
+	}
+}

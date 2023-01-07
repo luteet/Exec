@@ -1,0 +1,120 @@
+.main-title {
+	font-family: var(--title-font);
+	font-weight: 500;
+	font-size: 2.5rem;
+	line-height: 106%;
+
+	letter-spacing: -0.01em;
+	text-transform: capitalize;
+
+	margin: 0;
+
+	@media (min-width: 960px) {
+		font-size: 2.875rem;
+	}
+
+	@media (min-width: 1015px) {
+		font-size: 3.125rem;
+	}
+
+	@media (min-width: 1095px) {
+		font-size: 3.5rem;
+	}
+	
+}
+
+.title {
+	font-family: var(--title-font);
+	font-weight: 700;
+
+	font-size: 1.125rem;
+
+	@include _768 {
+		font-size: 1.5rem;
+	}
+
+	@include _992 {
+		font-size: 1.875rem;
+	}
+
+	&._min {
+	}
+}
+
+.section-title {
+	font-family: var(--title-font);
+	font-weight: 700;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.section-name {
+	padding: 13px 22.45px;
+	font-size: 0.75rem;
+	line-height: 15.22px;
+	@media (min-width: 1015px) {
+		font-size: 0.875rem;
+		line-height: 18px;
+	}
+
+	text-align: center;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	color: #A663CC;
+
+	display: inline-block;
+	
+	background: rgba(166, 99, 204, 0.09);
+	backdrop-filter: blur(3px);
+	border-radius: 25px;
+}
+
+.section-title {
+	padding-top: 25px;
+
+	font-weight: 500;
+	font-size: 2.125rem;
+	&._alt {
+		font-size: 2.25rem;
+	}
+	&._light {
+		color: #FFF;
+	}
+	@media (min-width: 960px) {
+		font-size: 2.25rem;
+		&._alt {
+			font-size: 2.25rem;
+		}
+	}
+	@media (min-width: 1015px) {
+		font-size: 2.625rem;
+		&._alt {
+			font-size: 2.625rem;
+		}
+	}
+	@media (min-width: 1210px) {
+		font-size: 3rem;
+		&._alt {
+			font-size: 3rem;
+		}
+	}
+
+	line-height: 111.5%;
+	letter-spacing: -0.01em;
+	text-transform: capitalize;
+
+	color: #0E0B3D;
+}
+
+.section-text {
+	padding-top: 15px;
+	font-size: 1rem;
+	@media (min-width: 1205px) {
+		font-size: 1.125rem;
+	}
+	line-height: 143.5%;
+	color: #0E0B3D;
+}

@@ -1,0 +1,151 @@
+.header {
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+
+	padding: 50px 0 76px 0;
+	@media (min-width: 535px) {
+		padding: 50px 0 90px 0;
+	}
+	@media (min-width: 890px) {
+		padding: 50px 0 76px 0;
+	}
+	@media (min-width: 1015px) {
+		padding: 50px 0 70px 0;
+	}
+
+	//padding-right: var(--popup-padding) !important;
+
+	//transform: translate(0, var(--pos));
+
+	//transition: transform .2s ease-in-out;
+
+	z-index: 99;
+
+	&._active {
+		position: sticky;
+		background: var(--white);
+
+		box-shadow: 0 0 5px 1px rgba(#000000, 0.3);
+	}
+
+	&._active &__logo {
+		max-width: 125px;
+	}
+
+	&__logo {
+		max-width: 110px;
+		&--img {
+			width: 100%;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__nav {
+		flex: 1 1 auto;
+
+		&--body {
+			display: flex;
+			align-items: center;
+		}
+
+		&--list {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+
+			flex: 1 1 auto;
+			padding-left: 31px;
+			margin: -10px -15px;
+
+			@media (min-width: 1155px) {
+				padding-left: 51px;
+				margin: -10px -18.5px;
+			}
+			@media (min-width: 1275px) {
+				padding-left: 77px;
+			}
+
+			
+		}
+
+		&--item {
+			
+		}
+
+		&--link {
+			padding: 10px 15px;
+			@media (min-width: 1155px) {
+				padding: 10px 18.5px;
+			}
+
+			line-height: 133%;
+
+			color: #535479;
+
+			transition: color .2s ease-in-out;
+			&:hover {
+				color: #7375a5;
+			}
+			
+			&:active {
+				color: #31324b;
+			}
+		}
+
+		&--add-list {
+			flex: 1 1 auto;
+			display: flex;
+			justify-content: flex-end;
+
+			margin: 0 -13px;
+
+			& li {
+				padding: 0 13px;
+			}
+		}
+
+		&--tel {
+			color: #535479;
+			line-height: 133%;
+
+			transition: color .2s ease-in-out;
+
+			&:hover {
+				color: #6f71a1;
+			}
+			
+			&:active {
+				color: #3c3d5c;
+			}
+		}
+
+		&--download {
+			line-height: 133%;
+			text-align: center;
+
+			color: #171531;
+			padding: 14px 23px;
+
+			border: 1px solid rgba(14, 11, 61, 0.08);
+			border-radius: 14px;
+
+			transition: background .3s ease-in-out, color .3s ease-in-out, border-color .2s ease-in-out;
+			&:hover {
+				color: #FFF;
+				background: var(--accent-light);
+				border-color: var(--accent-light);
+			}
+			
+			&:active {
+				background: var(--accent-dark);
+			}
+		}
+	}
+}
