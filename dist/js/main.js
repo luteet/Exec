@@ -69,4 +69,10 @@ AOS.init({
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </Анимации> -=-=-=-=-=-=-=-=-=-=-=-=
 
-
+window.onload = function() {
+	const showElements = document.querySelectorAll('.show-element')
+	showElements.forEach(showElement => {
+		showElement.style.backgroundImage = showElement.dataset.image;
+		delete showElement.dataset.image;
+	})
+}
