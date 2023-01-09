@@ -82,26 +82,26 @@ body {
 
 @keyframes showfall {
     100% {
-        background-position: 100em 100em;
+        background-position: 200em 200em;
     }
 }
 
 @keyframes showfall2 {
     100% {
-        background-position: 70em 0;
+        background-position: 170em 0;
     }
 }
 
 .show {
-    background-size: 100em;
-    animation: showfall 30s linear infinite;
-    opacity: .8;
+    background-size: 200em;
+    animation: showfall 50s linear infinite;
+    opacity: .5;
 }
 
 .show2 {
-    background-size: 70em;
-    animation: showfall2 30s linear infinite;
-    opacity: .5;
+    background-size: 170em;
+    animation: showfall2 45s linear infinite;
+    opacity: .3;
 }
 
 .show-wrapper {
@@ -251,3 +251,20 @@ section {
     position: relative;
     z-index: 2;
 }
+
+[data-aos="custom-fade-up"] {
+    opacity: 0; transform: translateY(35px);
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1; transform: translateY(0px);
+    }
+  
+    /* @media screen and (min-width: 768px) {
+      transform: translateX(100px);
+  
+      &.aos-animate {
+        transform: translateX(0);
+      }
+    } */
+  }

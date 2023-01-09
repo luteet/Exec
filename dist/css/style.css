@@ -2,7 +2,7 @@ body,html {
     -webkit-text-size-adjust: 100%
 }
 
-button,hr,input {
+.swiper-cube,.swiper-flip,button,hr,input {
     overflow: visible
 }
 
@@ -16,6 +16,10 @@ progress,sub,sup {
 
 .swiper,ul li {
     list-style: none
+}
+
+.swiper-vertical>.swiper-wrapper,body {
+    flex-direction: column
 }
 
 * {
@@ -236,10 +240,6 @@ summary {
     z-index: 1
 }
 
-.swiper-vertical>.swiper-wrapper {
-    flex-direction: column
-}
-
 .swiper-wrapper {
     z-index: 1;
     display: flex;
@@ -247,6 +247,10 @@ summary {
     transition-property: transform;
     transition-property: transform,-webkit-transform;
     box-sizing: content-box
+}
+
+.swiper-button-lock,.swiper-pagination-lock {
+    display: none
 }
 
 .swiper-android .swiper-slide,.swiper-wrapper {
@@ -472,10 +476,6 @@ summary {
     content: "next"
 }
 
-.swiper-button-lock {
-    display: none
-}
-
 .swiper-pagination {
     position: absolute;
     text-align: center;
@@ -502,10 +502,6 @@ summary {
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0
-}
-
-.swiper-cube,.swiper-flip {
-    overflow: visible
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
@@ -657,10 +653,6 @@ button.swiper-pagination-bullet {
     height: 100%;
     left: 0;
     top: 0
-}
-
-.swiper-pagination-lock {
-    display: none
 }
 
 .swiper-scrollbar {
@@ -1711,8 +1703,7 @@ body {
     font-family: var(--main-font);
     font-weight: 400;
     line-height: 150%;
-    display: flex;
-    flex-direction: column
+    display: flex
 }
 
 .main-title,.section-title,.title {
@@ -1751,40 +1742,40 @@ body._active,body._popup-active {
 
 @-webkit-keyframes showfall {
     100% {
-        background-position: 100em 100em
+        background-position: 200em 200em
     }
 }
 
 @keyframes showfall {
     100% {
-        background-position: 100em 100em
+        background-position: 200em 200em
     }
 }
 
 @-webkit-keyframes showfall2 {
     100% {
-        background-position: 70em 0
+        background-position: 170em 0
     }
 }
 
 @keyframes showfall2 {
     100% {
-        background-position: 70em 0
+        background-position: 170em 0
     }
 }
 
 .show {
-    background-size: 100em;
-    -webkit-animation: showfall 30s linear infinite;
-    animation: showfall 30s linear infinite;
-    opacity: .8
+    background-size: 200em;
+    -webkit-animation: showfall 50s linear infinite;
+    animation: showfall 50s linear infinite;
+    opacity: .5
 }
 
 .show2 {
-    background-size: 70em;
-    -webkit-animation: showfall2 30s linear infinite;
-    animation: showfall2 30s linear infinite;
-    opacity: .5
+    background-size: 170em;
+    -webkit-animation: showfall2 45s linear infinite;
+    animation: showfall2 45s linear infinite;
+    opacity: .3
 }
 
 .show-wrapper {
@@ -1792,6 +1783,14 @@ body._active,body._popup-active {
     transition: opacity .5s ease;
     will-change: opacity;
     z-index: 100
+}
+
+.bg-img,.btn._gradient::after,.btn._gradient::before {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0
 }
 
 .container {
@@ -1812,18 +1811,13 @@ body._active,body._popup-active {
 }
 
 .bg-img {
-    position: absolute;
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -o-object-fit: cover;
-    object-fit: cover;
-    z-index: -1
+    object-fit: cover
 }
 
 .integrate__bg,.intro__bg {
@@ -1860,12 +1854,7 @@ body._active,body._popup-active {
 
 .btn._gradient::after,.btn._gradient::before {
     content: "";
-    position: absolute;
     left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
     transition: opacity .3s ease-in-out;
     opacity: 0
 }
@@ -1895,6 +1884,21 @@ body._active,body._popup-active {
 section {
     position: relative;
     z-index: 2
+}
+
+[data-aos=custom-fade-up] {
+    opacity: 0;
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+    transition-property: opacity,-webkit-transform;
+    transition-property: transform,opacity;
+    transition-property: transform,opacity,-webkit-transform
+}
+
+[data-aos=custom-fade-up].aos-animate {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
 }
 
 .main-title {
