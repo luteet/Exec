@@ -16,7 +16,7 @@ let introSlider = new Swiper('.intro__slider', {
 		reverseDirection: true,
 		disableOnInteraction: false,
 	},
-	speed: lengthSlides*3500,
+	speed: lengthSlides*2500,
 	loop: true,
 	loopAdditionalSlides: 2,
 	//freeMode: true,
@@ -24,20 +24,25 @@ let introSlider = new Swiper('.intro__slider', {
 		1185: {
 			//slidesPerView: 6,
 			spaceBetween: 86,
+			speed: lengthSlides*3500,
 		},
 		1015: {
 			spaceBetween: 86,
+			speed: lengthSlides*3500,
 		},
 		890: {
 			//slidesPerView: 5,
 			spaceBetween: 60,
+			speed: lengthSlides*3500,
 		},
 		650: {
 			//slidesPerView: 3,
 			spaceBetween: 60,
+			speed: lengthSlides*3500,
 		},
 		425: {
 			spaceBetween: 30,
+			speed: lengthSlides*3500,
 		}
     }
 

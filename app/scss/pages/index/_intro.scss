@@ -433,6 +433,10 @@
 
 			& img {
 				width: auto; height: 100%;
+				max-height: calc(var(--max-height) / 1.5);
+				@media (min-width: 680px) {
+					max-height: var(--max-height);
+				}
 				object-position: center;
 			}
 		}

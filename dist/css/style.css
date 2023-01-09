@@ -2,7 +2,7 @@ body,html {
     -webkit-text-size-adjust: 100%
 }
 
-.swiper-cube,.swiper-flip,button,hr,input {
+button,hr,input {
     overflow: visible
 }
 
@@ -10,16 +10,12 @@ progress,sub,sup {
     vertical-align: baseline
 }
 
-*,.swiper-lazy-preloader,:after,:before,[type=checkbox],[type=radio],legend {
+*,:after,:before,[type=checkbox],[type=radio],legend {
     box-sizing: border-box
 }
 
 .swiper,ul li {
     list-style: none
-}
-
-.swiper-vertical>.swiper-wrapper,body {
-    flex-direction: column
 }
 
 * {
@@ -240,6 +236,10 @@ summary {
     z-index: 1
 }
 
+.swiper-vertical>.swiper-wrapper {
+    flex-direction: column
+}
+
 .swiper-wrapper {
     z-index: 1;
     display: flex;
@@ -247,10 +247,6 @@ summary {
     transition-property: transform;
     transition-property: transform,-webkit-transform;
     box-sizing: content-box
-}
-
-.swiper-button-lock,.swiper-pagination-lock {
-    display: none
 }
 
 .swiper-android .swiper-slide,.swiper-wrapper {
@@ -476,6 +472,10 @@ summary {
     content: "next"
 }
 
+.swiper-button-lock {
+    display: none
+}
+
 .swiper-pagination {
     position: absolute;
     text-align: center;
@@ -502,6 +502,10 @@ summary {
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0
+}
+
+.swiper-cube,.swiper-flip {
+    overflow: visible
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
@@ -655,6 +659,10 @@ button.swiper-pagination-bullet {
     top: 0
 }
 
+.swiper-pagination-lock {
+    display: none
+}
+
 .swiper-scrollbar {
     border-radius: 10px;
     position: relative;
@@ -725,6 +733,7 @@ button.swiper-pagination-bullet {
     z-index: 10;
     -webkit-transform-origin: 50%;
     transform-origin: 50%;
+    box-sizing: border-box;
     border: 4px solid;
     border-radius: 50%;
     border-top-color: transparent
@@ -1702,7 +1711,8 @@ body {
     font-family: var(--main-font);
     font-weight: 400;
     line-height: 150%;
-    display: flex
+    display: flex;
+    flex-direction: column
 }
 
 .main-title,.section-title,.title {
@@ -2275,6 +2285,7 @@ section {
 .intro__slide--body img {
     width: auto;
     height: 100%;
+    max-height: calc(var(--max-height)/ 1.5);
     -o-object-position: center;
     object-position: center
 }
@@ -3131,6 +3142,12 @@ section {
 
     .credit__card._dark .credit__card--body {
         padding: 33px 31px 35px 32px
+    }
+}
+
+@media (min-width:680px) {
+    .intro__slide--body img {
+        max-height: var(--max-height)
     }
 }
 
