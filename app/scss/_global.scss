@@ -75,31 +75,30 @@ body {
     left: 0; top: 0;
     z-index: 100;
     width: 100%; height: 100%;
-    //background-color: #000;
     background-position: 0 0;
     pointer-events: none;
 }
 
 @keyframes showfall {
     100% {
-        background-position: 200em 200em;
+        background-position: 240em 240em;
     }
 }
 
 @keyframes showfall2 {
     100% {
-        background-position: 170em 0;
+        background-position: 200em 0;
     }
 }
 
 .show {
-    background-size: 200em;
+    background-size: 240em;
     animation: showfall 50s linear infinite;
     opacity: .5;
 }
 
 .show2 {
-    background-size: 170em;
+    background-size: 200em;
     animation: showfall2 45s linear infinite;
     opacity: .2;
 }
