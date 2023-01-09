@@ -3,6 +3,8 @@
 	border-radius: 55px 55px 0px 0px;
 	background: var(--accent);
 
+	z-index: 10;
+
 	padding: 92px 0 88px 0;
 	@media (min-width: 685px) {
 		padding: 114px 0 92px 0;

@@ -5,33 +5,35 @@ const body = document.querySelector('body'),
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
+const lengthSlides = document.querySelectorAll('.intro__slide').length;
 let introSlider = new Swiper('.intro__slider', {
   
     spaceBetween: 30,
-    slidesPerView: 2,
+	slidesPerGroup: lengthSlides,
+    slidesPerView: "auto",
 	autoplay: {
 		delay: 0,
 		reverseDirection: true,
 		disableOnInteraction: false,
-		pauseOnMouseEnter: true,
 	},
-	speed: 3000,
+	speed: lengthSlides*3500,
 	loop: true,
 	loopAdditionalSlides: 2,
-	freeMode: true,
+	//freeMode: true,
     breakpoints: {
 		1185: {
-			slidesPerView: 6,
+			//slidesPerView: 6,
+			spaceBetween: 86,
 		},
 		1015: {
 			spaceBetween: 86,
 		},
 		890: {
-			slidesPerView: 5,
+			//slidesPerView: 5,
 			spaceBetween: 60,
 		},
 		650: {
-			slidesPerView: 3,
+			//slidesPerView: 3,
 			spaceBetween: 60,
 		},
 		425: {
@@ -39,7 +41,7 @@ let introSlider = new Swiper('.intro__slider', {
 		}
     }
 
-}); 
+});
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -64,15 +66,22 @@ window.onresize = resize;
 // =-=-=-=-=-=-=-=-=-=-=-=- <Анимации> -=-=-=-=-=-=-=-=-=-=-=-=
 
 AOS.init({
-	disable: "mobile"
+	disable: "mobile",
+	once: true,
 });
 
 // =-=-=-=-=-=-=-=-=-=-=-=- </Анимации> -=-=-=-=-=-=-=-=-=-=-=-=
 
 window.onload = function() {
-	const showElements = document.querySelectorAll('.show-element')
+	const showWrapper = document.querySelector('.show-wrapper'),
+		  showElements = document.querySelectorAll('.show-element');
+
 	showElements.forEach(showElement => {
 		showElement.style.backgroundImage = showElement.dataset.image;
 		delete showElement.dataset.image;
 	})
+
+	setTimeout(() => {
+		showWrapper.style.opacity = 1;
+	},0)
 }
