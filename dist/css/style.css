@@ -22,6 +22,10 @@ progress,sub,sup {
     flex-direction: column
 }
 
+.btn,.header__nav--download,.intro__block,.section-name,.swiper-pagination,.swiper-zoom-container,.txt-center {
+    text-align: center
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -478,7 +482,6 @@ summary {
 
 .swiper-pagination {
     position: absolute;
-    text-align: center;
     transition: .3s opacity;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -703,8 +706,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center
+    align-items: center
 }
 
 .swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg {
@@ -1706,10 +1708,6 @@ body {
     display: flex
 }
 
-.main-title,.section-title,.title {
-    font-family: var(--title-font)
-}
-
 body._active,body._popup-active {
     overflow: hidden
 }
@@ -1775,7 +1773,7 @@ body._active,body._popup-active {
     background-size: 170em;
     -webkit-animation: showfall2 45s linear infinite;
     animation: showfall2 45s linear infinite;
-    opacity: .3
+    opacity: .2
 }
 
 .show-wrapper {
@@ -1783,14 +1781,6 @@ body._active,body._popup-active {
     transition: opacity .5s ease;
     will-change: opacity;
     z-index: 100
-}
-
-.bg-img,.btn._gradient::after,.btn._gradient::before {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0
 }
 
 .container {
@@ -1811,13 +1801,18 @@ body._active,body._popup-active {
 }
 
 .bg-img {
+    position: absolute;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    z-index: -1
 }
 
 .integrate__bg,.intro__bg {
@@ -1828,12 +1823,11 @@ body._active,body._popup-active {
 .btn {
     display: inline-flex;
     align-items: center;
-    text-align: center;
     padding: 18px 25px;
     background: var(--accent);
     color: var(--white);
     border-radius: 18px;
-    transition: color .3s ease-in-out,background .3s ease-in-out
+    transition: color .3s ease-in-out,background .3s ease-in-out,opacity .3s ease-in-out
 }
 
 .btn svg {
@@ -1854,7 +1848,12 @@ body._active,body._popup-active {
 
 .btn._gradient::after,.btn._gradient::before {
     content: "";
+    position: absolute;
     left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
     transition: opacity .3s ease-in-out;
     opacity: 0
 }
@@ -1881,6 +1880,21 @@ body._active,body._popup-active {
     opacity: .7
 }
 
+.btn._light {
+    color: var(--accent);
+    background: #fff
+}
+
+.btn._light:hover {
+    background: #fff;
+    opacity: .8
+}
+
+.btn._light:active {
+    background: #fff;
+    opacity: .7
+}
+
 section {
     position: relative;
     z-index: 2
@@ -1902,6 +1916,7 @@ section {
 }
 
 .main-title {
+    font-family: var(--title-font);
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 106%;
@@ -1911,19 +1926,15 @@ section {
 }
 
 .title {
+    font-family: var(--title-font);
     font-weight: 700;
     font-size: 1.125rem
-}
-
-.txt-center {
-    text-align: center
 }
 
 .section-name {
     padding: 13px 22.45px;
     font-size: .75rem;
     line-height: 15.22px;
-    text-align: center;
     letter-spacing: .08em;
     text-transform: uppercase;
     color: #a663cc;
@@ -1933,6 +1944,7 @@ section {
 }
 
 .section-title {
+    font-family: var(--title-font);
     padding-top: 25px;
     font-weight: 500;
     font-size: 2.125rem;
@@ -2051,7 +2063,6 @@ section {
 
 .header__nav--download {
     line-height: 133%;
-    text-align: center;
     color: #171531;
     padding: 14px 23px;
     border: 1px solid rgba(14,11,61,.08);
@@ -2106,8 +2117,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    text-align: center
+    flex-direction: column
 }
 
 .intro__info {

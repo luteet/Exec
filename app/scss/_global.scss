@@ -101,7 +101,7 @@ body {
 .show2 {
     background-size: 170em;
     animation: showfall2 45s linear infinite;
-    opacity: .3;
+    opacity: .2;
 }
 
 .show-wrapper {
@@ -187,7 +187,7 @@ body {
 
     border-radius: 18px;
 
-    transition: color .3s ease-in-out, background .3s ease-in-out;
+    transition: color .3s ease-in-out, background .3s ease-in-out, opacity .3s ease-in-out;
 
     &:hover {
         background: var(--accent-light);
@@ -231,6 +231,20 @@ body {
             &::after {
                 opacity: .7;
             }
+        }
+    }
+
+    &._light {
+        color: var(--accent);
+        background: #FFF;
+        &:hover {
+            background: #FFF;
+            opacity: .8;
+        }
+        
+        &:active {
+            background: #FFF;
+            opacity: .7;
         }
     }
 }
