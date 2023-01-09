@@ -71,7 +71,7 @@ window.onresize = resize;
 // =-=-=-=-=-=-=-=-=-=-=-=- <Анимации> -=-=-=-=-=-=-=-=-=-=-=-=
 
 AOS.init({
-	disable: "mobile",
+	//disable: "mobile",
 	once: true,
 });
 
