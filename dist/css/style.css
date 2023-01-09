@@ -216,8 +216,8 @@ summary {
 :root {
     --swiper-theme-color: #007aff;
     --swiper-navigation-size: 44px;
-    --title-font: "EuclidCircularA";
-    --main-font: "EuclidCircularA";
+    --title-font: "EuclidCircularA",sans-serif;
+    --main-font: "EuclidCircularA",sans-serif;
     --accent: #0E0B3D;
     --accent-light: #18135f;
     --accent-dark: #08052b;
