@@ -1740,40 +1740,40 @@ body._active,body._popup-active {
 
 @-webkit-keyframes showfall {
     100% {
-        background-position: 240em 240em
+        background-position: 170em 170em
     }
 }
 
 @keyframes showfall {
     100% {
-        background-position: 240em 240em
+        background-position: 170em 170em
     }
 }
 
 @-webkit-keyframes showfall2 {
     100% {
-        background-position: 200em 0
+        background-position: 140em 0
     }
 }
 
 @keyframes showfall2 {
     100% {
-        background-position: 200em 0
+        background-position: 140em 0
     }
 }
 
 .show {
-    background-size: 240em;
-    -webkit-animation: showfall 50s linear infinite;
-    animation: showfall 50s linear infinite;
-    opacity: .5
+    background-size: 170em;
+    -webkit-animation: showfall 60s linear infinite;
+    animation: showfall 60s linear infinite;
+    opacity: .4
 }
 
 .show2 {
-    background-size: 200em;
-    -webkit-animation: showfall2 45s linear infinite;
-    animation: showfall2 45s linear infinite;
-    opacity: .2
+    background-size: 140em;
+    -webkit-animation: showfall2 55s linear infinite;
+    animation: showfall2 55s linear infinite;
+    opacity: .1
 }
 
 .show-wrapper {
@@ -2254,13 +2254,13 @@ section {
 }
 
 .intro__trusted--slider::before {
-    background: linear-gradient(90deg,#FBFBFF 0,rgba(251,251,255,0) 100%);
+    background: linear-gradient(90deg,#FFF 0,rgba(251,251,255,0) 100%);
     left: -1px
 }
 
 .intro__trusted--slider::after {
     right: -1px;
-    background: linear-gradient(-90deg,#FBFBFF 0,rgba(251,251,255,0) 100%)
+    background: linear-gradient(-90deg,#FFF 0,rgba(251,251,255,0) 100%)
 }
 
 .intro__trusted--title {
@@ -3281,6 +3281,18 @@ section {
 
     .main {
         padding-bottom: 78px
+    }
+
+    .show {
+        background-size: 170em;
+        -webkit-animation: showfall 50s linear infinite;
+        animation: showfall 50s linear infinite
+    }
+
+    .show2 {
+        background-size: 140em;
+        -webkit-animation: showfall2 45s linear infinite;
+        animation: showfall2 45s linear infinite
     }
 
     .container {

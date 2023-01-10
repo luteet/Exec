@@ -363,13 +363,13 @@
 			}
 
 			&::before {
-				background: linear-gradient(90deg, #FBFBFF 0%, rgba(251, 251, 255, 0) 100%);
+				background: linear-gradient(90deg, #FFF 0%, rgba(251, 251, 255, 0) 100%);
 				left: -1px;
 			}
 
 			&::after {
 				right: -1px;
-				background: linear-gradient(-90deg, #FBFBFF 0%, rgba(251, 251, 255, 0) 100%);
+				background: linear-gradient(-90deg, #FFF 0%, rgba(251, 251, 255, 0) 100%);
 			}
 		}
 
