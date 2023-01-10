@@ -1740,13 +1740,13 @@ body._active,body._popup-active {
 
 @-webkit-keyframes showfall {
     100% {
-        background-position: 170em 170em
+        background-position: 180em 180em
     }
 }
 
 @keyframes showfall {
     100% {
-        background-position: 170em 170em
+        background-position: 180em 180em
     }
 }
 
@@ -1763,7 +1763,7 @@ body._active,body._popup-active {
 }
 
 .show {
-    background-size: 170em;
+    background-size: 180em;
     -webkit-animation: showfall 60s linear infinite;
     animation: showfall 60s linear infinite;
     opacity: .4
@@ -3284,13 +3284,11 @@ section {
     }
 
     .show {
-        background-size: 170em;
         -webkit-animation: showfall 50s linear infinite;
         animation: showfall 50s linear infinite
     }
 
     .show2 {
-        background-size: 140em;
         -webkit-animation: showfall2 45s linear infinite;
         animation: showfall2 45s linear infinite
     }
