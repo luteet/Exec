@@ -3,6 +3,29 @@ const body = document.querySelector('body'),
     html = document.querySelector('html'),
     header = document.querySelector('.header');
 
+body.addEventListener('click', function (event) {
+
+	function $(elem) {
+	  return event.target.closest(elem)
+	}
+
+	let btnToScroll = $('.btn-to-scroll');
+	if(btnToScroll) {
+		event.preventDefault();
+		let section;
+	
+		section = document.querySelector(btnToScroll.getAttribute('href'))
+	
+		window.scroll({
+			left: 0,
+			top: (section) ? section.offsetTop : 0,
+			behavior: 'smooth'
+		})
+	
+	}
+
+})
+
 // =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
 const lengthSlides = document.querySelectorAll('.intro__slide').length;

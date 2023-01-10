@@ -52,19 +52,8 @@ function images() {
 function scriptsLib() {
     return src([
         'node_modules/swiper/swiper-bundle.min.js', // Слайдер
-        //'node_modules/clipboard/dist/clipboard.min.js', // Копирование в буфер обмена
         'node_modules/aos/dist/aos.js', // Анимация
-        //'node_modules/slim-select/dist/slimselect.min.js', // Select
-        //'node_modules/shufflejs/dist/shuffle.min.js', // Tab Filter
-        //'node_modules/sticky-js/dist/sticky.min.js' // Sticky
-        //'node_modules/jquery/dist/jquery.js', // jQuery
-        //'node_modules/slick-carousel/slick/slick.min.js', // Слайдер (jQuery)
-        //'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js', // Попап (jQuery)
-        //'node_modules/wowjs/dist/wow.min.js', // Анимация
-        //'node_modules/nouislider/dist/nouislider.min.js', // Кастомный input[range]
-        //'node_modules/fslightbox/index.js', // Галерея
-        //'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll()
-        //'node_modules/chart.js/dist/chart.min.js', // График
+        'node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js', // Полифил для window.scroll()
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -137,11 +126,7 @@ function stylesLib() {
     return src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/swiper/swiper-bundle.min.css', // Слайдер
-        //'node_modules/slim-select/dist/slimselect.min.css', // Select
-        //'node_modules/slick-carousel/slick/slick.css', // Слайдер (jQuery)
-        //'node_modules/magnific-popup/dist/magnific-popup.css' // Попап (jQuery)
         'node_modules/aos/dist/aos.css', // Анимация
-        //'node_modules/nouislider/dist/nouislider.css', // Кастомный input[range]
     ])
     .pipe(concat('_libs.scss'))
     .pipe(dest('app/scss'))
